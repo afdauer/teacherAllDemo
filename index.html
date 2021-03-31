@@ -31,7 +31,7 @@
         <tr id="astro">
           <td>Astro Daniels</td>
           <td>Incomplete</td>
-          <td>3</td>
+          <td style="background-color: red;">3</td>
           <td>
             <center>
               <form action="https://teacheralldemo.pip2021.repl.co/astro.html">
@@ -67,4 +67,22 @@
       </table>
     </center>
   </body>
+  <footer>
+    <div id="status">
+      <center><h4>Timesheet Status: Incomplete</h4></center>
+      <center><label for="currentDateTime">Last Updated:</label>
+      <center><input type="text" id="currentDateTime" style="text-align:center; border: 0px; background-color: white;"></center>
+      <script>
+        var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date+' '+time;
+        document.getElementById("currentDateTime").value = dateTime;
+      </script>
+    </div>
+    <hr>
+    <div id="copyright">
+      <center><h4>© 2020 - RISD Student</h4></center>
+    </div>
+  </footer>
 </html>
